@@ -1,0 +1,71 @@
+/*------------------------------------*\
+    #MEDIA QUERIES
+\*------------------------------------*/
+
+/**
+ * Se definen media queries para trabajar en diferentes vistas:
+    1. Ancho mínimo de 430px    (Vistas móviles extra pequeñas)
+    2. Ancho mínimo de 575px    (Vistas móviles pequeñas)
+    3. Ancho mínimo de 768px    (Vistas tabletas pequeñas)
+    4. Ancho mínimo de 1024px   (Vistas tabletas medianas)
+    5. Ancho mínimo de 1200px   (Vistas escritorio pequeño)
+    6. Ancho mínimo de 1440px   (Vistas escritorio medio)
+ */
+
+/**
+* Se definen variables y mixins.
+*/
+
+//1. extra small
+$screen-xs: 430px;
+
+@mixin xs {
+  @media (min-width: #{$screen-xs}) {
+    @content;
+  }
+}
+
+//2. small
+$screen-s: 575px;
+
+@mixin s {
+  @media (min-width: #{$screen-s}) {
+    @content;
+  }
+}
+
+//3. small tablet
+$screen-st: 768px;
+
+@mixin st {
+  @media (min-width: #{$screen-st}) {
+    @content;
+  }
+}
+
+//4. medium tablet
+$screen-mt: 1024px;
+
+@mixin mt {
+  @media (min-width: #{$screen-mt}) {
+    @content;
+  }
+}
+
+//5. small desktop
+$screen-sd: 1200px;
+
+@mixin sd {
+  @media (min-width: #{$screen-sd}) {
+    @content;
+  }
+}
+
+//6. medium desktop
+$screen-md: 1440px;
+
+@mixin md {
+  @media (min-width: #{$screen-md}) {
+    @content;
+  }
+}

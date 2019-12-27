@@ -1,0 +1,85 @@
+/*------------------------------------*\
+    #BEMIT Workflow Template
+\*------------------------------------*/
+
+/**
+** CONTENIDO
+*
+** El proyecto trabaja bajo los estandares BEMIT (metodología BEM + arquitectura del 
+** Triángulo Invertido) propuestos por Harry Roberts.
+*
+** A continuación se presenta la arquitectura utilizada en el proyecto.
+*
+*
+** SETTINGS
+** Fonts.......................Fuentes del proyecto a nivel global.
+** Variables...................Variables del proyecto a nivel global.
+*
+** TOOLS
+** Media Queries...............Media Queries para diferentes tamaños de pantallas.
+** Mixins......................Mixins útiles para el proyecto.
+*
+** GENERIC
+** NormalizeCSS................Reseteo CSS bajo archivo normalize.css.
+*
+** ELEMENTS
+** Elements....................Estilos predefinidos para elementos específicos del DOM.
+*
+** OBJECTS
+** Objects.....................Estilos globales para el sistema reticular de la interfáz.
+*
+** COMPONENTS
+** Components..................Estilos globales para los componentes de la interfáz.
+*
+** UTILITIES
+** God Tier....................Reglas de sobreescritura necesarias para el proyecto (!importants)
+*/
+
+:root {
+  font-size: 16px;
+}
+
+/**
+* #SETTINGS
+*/
+
+@import "./Settings/fonts";
+@import "./Settings/variables";
+
+/**
+* #TOOLS
+*/
+
+@import "./Tools/media-queries";
+@import "./Tools/mixins";
+
+/**
+* #GENERIC
+*/
+
+@import "./Generic/normalize";
+
+/**
+* #ELEMENTS
+*/
+
+@import "./Elements/elements";
+
+/**
+* #OBJECTS
+*/
+
+@import "./Objects/Home/objects";
+
+/**
+* #COMPONENTS
+*/
+
+@import "./Components/Global/nav-demo";
+@import "./Components/Home/Hero/components";
+
+/**
+* #UTILITIES
+*/
+
+@import "./Utilities/god-tier";

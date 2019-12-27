@@ -1,0 +1,56 @@
+/*------------------------------------*\
+    #MIXINS
+\*------------------------------------*/
+
+/**
+ * Se definen los siguientes mixins para el proyecto:
+    1. Display Flex
+    2. Pseudoelementos
+    3. Elementos con posición absoluta
+    4. Transiciones
+    5. Bordes
+ */
+
+/**
+* Se definen mixins.
+*/
+
+//1.
+@mixin flex-align($fdir, $align, $justify) {
+  display: flex;
+  flex-direction: $fdir;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+//2.
+@mixin pseudo($content: "", $display: block, $pos: absolute) {
+  content: $content;
+  display: $display;
+  position: $pos;
+}
+
+//3.
+@mixin abs-position($top, $right, $bottom, $left) {
+  position: absolute;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+//4.
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+//5. rebeccapurple es el color por default
+@mixin borde($px, $c: rebeccapurple) {
+  border-width: $px;
+  border-style: solid;
+  border-color: $c;
+}
