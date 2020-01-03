@@ -6,5 +6,16 @@
 ** Se definen variables de fuentes desde Google Fonts.
 */
 
-@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 $montserrat: "Montserrat", sans-serif;
+
+/**
+** Se definen variables de fuentes de manera local.
+*/
+
+@font-face {
+  font-family: "Gotham Pro", sans-serif;
+  src: url("/src/static/fonts/Gotham-Pro/GothaProMed.otf");
+}
+
+$gotham-pro: "Gotham Pro", sans-serif;

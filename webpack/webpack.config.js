@@ -51,6 +51,20 @@ module.exports = {
       },
 
       {
+        test: /\.(woff(2)?|ttf|otf)$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              outputPath: "static/fonts/",
+              useRelativePath: true
+            }
+          }
+        ]
+      },
+
+      {
         loader: "image-webpack-loader",
         options: {
           mozjpeg: {

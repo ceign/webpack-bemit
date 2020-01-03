@@ -3,7 +3,13 @@
 \*------------------------------------*/
 
 /**
- * #IMPORTS
+ * #IMPORTS IMAGES
+ */
+
+import "./static/fonts/Gotham-Pro/GothaProMed.otf";
+
+/**
+ * #IMPORTS IMAGES
  */
 
 import "./styles/main.scss";
