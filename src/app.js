@@ -13,7 +13,7 @@ import "./static/fonts/Gotham-Pro/GothaProMed.otf";
  */
 
 import "./styles/main.scss";
-import "./static/img/demo.png";
+import "./static/img/demo.jpg";
 
 /**
  * #CODE
